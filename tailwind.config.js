@@ -28,7 +28,7 @@ export default {
       },
       screens: {
         'sm': {'max':'320px'},    // Mobile screen size
-        'md': {'max':'768px'},    // Tablet screen size (if needed)
+        'md': {'max':'800px'},    // Tablet screen size (if needed)
         'lg': {'max':'1024px'},   // Desktop screen size
         'xl': {'max':'1440px'},   // Large desktop screen size
       },
