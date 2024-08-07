@@ -5,9 +5,13 @@ import Content from "./compenents/Content";
 function App() {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
+  const [number,setNumbre]=useState(0);
+
 
   function toggleCart() {
         setCart(!cart);
+        setMenu(false);
+
     }
   function toggleMenu() {
     setMenu(!menu);
