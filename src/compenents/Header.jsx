@@ -13,11 +13,11 @@ export default function Header({menu,toggleMenu , cart,toggleCart}) {
 
     return (
         <>
-            <div className={`relative px-8   flex justify-between  border-b-[1px] md:border-b-0 pb-10 md:pb-2  `}>
-                <div className={`relative flex justify-start items-center gap-4 
+            <div className={`relative px-0 ml-3 flex justify-between  border-b-[1px] md:border-b-0 pb-10 md:pb-2  `}>
+                <div className={`relative flex justify-start items-center gap-4  
                     ${menu ? "md:before:content-['']  md:before:fixed md:before:top-0 md:left-0 md:right-0 md:bottom-0   md:before:h-[100%] md:before:z-1 md:before:w-[100%] md:before:bg-[rgba(0,0,0,0.72)]"
                     : ""}`} >
-                    <div className={`hidden md:absolute md:left-0 md:top-0 md:pt-1 md:flex md:flex-col md:gap-10 md:h-screen md:w-[120%] z-10 
+                    <div className={`hidden md:absolute md:left-0 md:top-0 md:pt-1 md:flex md:flex-col md:gap-10 md:h-screen md:w-[180%] z-10 
                         ${menu ? "bg-white  ":""}`}>
                         <button onClick={toggleMenu}>
                             {!menu ? <img src={MenuIcon} alt="" className="pt-3" /> : <img src={closeIcon} alt="" className="pt-3" />}
