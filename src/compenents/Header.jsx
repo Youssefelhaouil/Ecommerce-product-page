@@ -8,7 +8,7 @@ import Cart from "./Cart.jsx";
 import NavLinks from "./Nav.jsx";
 
 
-export default function Header({menu,toggleMenu , cart,toggleCart}) {
+export default function Header({menu,toggleMenu , cart,toggleCart ,click, number, handleClickCart}) {
     
 
     return (
@@ -54,7 +54,7 @@ export default function Header({menu,toggleMenu , cart,toggleCart}) {
 
                     <img className=" cursor-pointer h-[40px] hover:border-2 hover:border-orange hover:rounded-full" src={avatar} alt="" />
                 </div>
-                {cart && <Cart></Cart>}
+                {cart && <Cart click={click} number={number} handleClickCart={handleClickCart}></Cart>}
 
             </div>
         </>

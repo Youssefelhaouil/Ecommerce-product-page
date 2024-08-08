@@ -1,25 +1,9 @@
 import plusIcon from '/images/icon-plus.svg';
 import minusIcon from '/images/icon-minus.svg';
 import iconCart from '/images/icon-cart.svg';
-import React ,{useState} from 'react';
 
-export default function ProductText() {
-    const [number,setNumbre]=useState(0);
-    const[click,setClick]=useState(false);
-
-    function incerement(){
-        setNumbre(n=>n+1)
-    }
-    function decrement(){
-        if (number>0){
-            setNumbre(n => n - 1)
-        }else{
-            setNumbre(0)
-        }
-    }
-    function handleClickCart(){
-        setClick(true)
-    }
+export default function ProductText({click, number, handleClickCart, decrement ,incerement}) {
+    
 
 
 
