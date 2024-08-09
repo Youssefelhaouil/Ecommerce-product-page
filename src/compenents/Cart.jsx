@@ -7,7 +7,7 @@ export default function Cart(click,setClick, number) {
 
     return (
         <>
-            <div className="absolute top-[85px] right-8 md:right-8  h-[200px] md:h-[200px] w-[350px] md:w-[90%]  bg-white rounded-lg shadow-2xl ">
+            <div className="absolute top-[85px] right-8 md:right-8  h-[200px] md:h-[200px] w-[350px] md:w-[90%]  bg-white rounded-lg shadow-2xl z-10 ">
                 <div className="px-4 py-2">
                     <h4 className="font-sans font-bold ">Cart</h4>
                 </div>
@@ -27,7 +27,6 @@ export default function Cart(click,setClick, number) {
                     <button className='cursor-pointer w-full h-[50px] bg-orange hover:opacity-70  text-center font-bold font-sans text-white rounded-lg'>Checkout</button>
 
                 </div>: <p className="text-center pt-14 md:pt-10">Your Cart is Empty</p> }
-                {/* <p className="text-center pt-14 md:pt-10">Your Cart is Empty</p>  */}
             </div>
         </>
     )
