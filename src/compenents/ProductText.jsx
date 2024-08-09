@@ -25,7 +25,7 @@ export default function ProductText({click, number, handleClickCart, decrement ,
                         <span className='font-sans font-bold text-[16px] text-very-dark-blue'>{number}</span>
                         <button onClick={incerement} className='flex justify-end items-center'> <img src={plusIcon} alt="" /></button>
                     </div>
-                    <button onClick={handleClickCart} className='w-[250px] h-[40px]  md:w-full text-center flex gap-4 justify-center items-center px-10 bg-orange rounded-lg font-sans font-bold text-very-dark-blue'>
+                    <button onClick={handleClickCart} className='w-[250px] h-[40px]  md:w-full text-center flex gap-4 justify-center items-center px-10 bg-orange hover:opacity-80 rounded-lg font-sans font-bold text-very-dark-blue'>
                         <img src={iconCart} alt="" />
                          Add to cart
                     </button>

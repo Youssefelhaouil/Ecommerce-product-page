@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <Header menu={menu} toggleMenu={toggleMenu} cart={cart} toggleCart={toggleCart} click={click} number={number} handleClickCart={handleClickCart}></Header>
+      <Header menu={menu} setClick={setClick} toggleMenu={toggleMenu} cart={cart} toggleCart={toggleCart} click={click} number={number} handleClickCart={handleClickCart}></Header>
       <Content menu={menu} click={click} number={number} handleClickCart={handleClickCart} decrement={decrement} incerement={incerement}></Content>
 
     </>
