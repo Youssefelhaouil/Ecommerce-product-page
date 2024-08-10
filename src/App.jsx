@@ -5,7 +5,7 @@ import Content from "./compenents/Content";
 function App() {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
-  const [click, setClick] = useState(false);
+  const [cartItems, setCartItems] = useState(0)
   const [number, setNumbre] = useState(0);
 
 
@@ -28,17 +28,28 @@ function App() {
       setNumbre(0)
     }
   }
-  function handleClickCart() {
-    if (number>0){
-      setClick(true)
-    }
-   
+  const handleAddToCart = () => {
+    setCartItems((prev) => prev + number);
+
   }
 
   return (
     <>
-      <Header menu={menu} setClick={setClick} toggleMenu={toggleMenu} cart={cart} toggleCart={toggleCart} click={click} number={number} handleClickCart={handleClickCart}></Header>
-      <Content menu={menu} click={click} number={number} handleClickCart={handleClickCart} decrement={decrement} incerement={incerement}></Content>
+      <Header menu={menu}
+        toggleMenu={toggleMenu}
+        cart={cart}
+        toggleCart={toggleCart}
+        cartItems={cartItems}
+        setCartItems={setCartItems}
+        number={number}
+        >
+
+      </Header>
+      <Content
+        number={number}
+        handleAddToCart={handleAddToCart}
+        decrement={decrement}
+        incerement={incerement}></Content>
 
     </>
   )

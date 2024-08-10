@@ -35,8 +35,8 @@ export default function Product() {
             <div className='grid grid-rows-[80%_20%] gap-y-4 px-4 md:grid-rows-1 mt-[-30px] md:mt-[-70px] pb-5'>
                 <div className='relative h-full w-full'>
                     <img onClick={() => setLightBox(true)} className='rounded-xl cursor-pointer' src={images[selectedImageIndex].full} alt="Selected Product" />
-                    <button onClick={prevImage}  ><GrPrevious className=' hidden md:block md:absolute md:top-1/2 md:left-4 md:-translate-y-1 md:bg-white md:h-10 md:w-10 md:text-gray-800 md:hover:text-orange  md:rounded-full md:cursor-pointer' /></button>
-                    <button onClick={nextImage}  ><GrNext className=' hidden md:block md:absolute md:top-1/2 md:right-4 md:-translate-y-1 md:bg-white md:h-10 md:w-10 md:text-gray-800 md:hover:text-orange  md:rounded-full md:cursor-pointer' /></button>
+                    <button onClick={prevImage}  ><GrPrevious className=' hidden md:block md:absolute md:top-1/2 md:left-4 md:bg-opacity-85 md:-translate-y-1 md:bg-white md:h-10 md:w-10 md:text-gray-800 md:hover:text-orange  md:rounded-full md:cursor-pointer' /></button>
+                    <button onClick={nextImage}  ><GrNext className=' hidden md:block md:absolute md:top-1/2 md:right-4 md:bg-opacity-85 md:-translate-y-1 md:bg-white md:h-10 md:w-10 md:text-gray-800 md:hover:text-orange  md:rounded-full md:cursor-pointer' /></button>
                 </div>
                 <div className='grid grid-cols-4 gap-x-4 md:hidden'>
                     {images.map((image, index) => (
