@@ -1,6 +1,6 @@
 import plusIcon from '/images/icon-plus.svg';
 import minusIcon from '/images/icon-minus.svg';
-import iconCart from '/images/icon-cart.svg';
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export default function ProductText({ number, handleAddToCart, decrement, incerement }) {
     return (
@@ -24,8 +24,8 @@ export default function ProductText({ number, handleAddToCart, decrement, incere
                         <span className='font-sans font-bold text-[16px] text-very-dark-blue'>{number}</span>
                         <button onClick={incerement} className='flex justify-end items-center'> <img src={plusIcon} alt="" /></button>
                     </div>
-                    <button onClick={handleAddToCart} className='w-[250px] h-[40px]  md:w-full text-center flex gap-4 justify-center items-center px-10 bg-orange hover:opacity-80 rounded-lg font-sans font-bold text-very-dark-blue'>
-                        <img src={iconCart} alt="" />
+                    <button onClick={handleAddToCart} className='w-[250px] h-[40px]  md:w-full text-center flex gap-4 justify-center items-center px-10 bg-orange hover:opacity-80 rounded-lg font-sans font-bold text-white'>
+                        <AiOutlineShoppingCart className='text-[24px] text-white text-bold ' />
                         Add to cart
                     </button>
 

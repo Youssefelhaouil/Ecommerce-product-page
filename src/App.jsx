@@ -5,7 +5,7 @@ import Content from "./compenents/Content";
 function App() {
   const [menu, setMenu] = useState(false);
   const [cart, setCart] = useState(false);
-  const [cartItems, setCartItems] = useState(0)
+  const [cartItems, setCartItems] = useState(0);
   const [number, setNumbre] = useState(0);
 
 
@@ -29,7 +29,7 @@ function App() {
     }
   }
   const handleAddToCart = () => {
-    setCartItems((prev) => prev + number);
+    setCartItems(prevCartItems => prevCartItems + number);
 
   }
 
@@ -42,7 +42,7 @@ function App() {
         cartItems={cartItems}
         setCartItems={setCartItems}
         number={number}
-        >
+      >
 
       </Header>
       <Content

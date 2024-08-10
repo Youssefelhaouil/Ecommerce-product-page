@@ -3,7 +3,7 @@ import Logo from "/images/logo.svg";
 import MenuIcon from "/images/icon-menu.svg";
 import closeIcon from "/images/icon-close.svg";
 import avatar from "/images/image-avatar.png";
-import cartIcon from "/images/icon-cart.svg";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import Cart from "./Cart.jsx";
 import NavLinks from "./Nav.jsx";
 
@@ -47,7 +47,7 @@ export default function Header({ menu, toggleMenu,cartItems,setCartItems, cart, 
                     <div className="relative  flex flex-col gap-y-4">
                         {cartItems > 0 && <p className="absolute right-[-10px] top-[-10px] md:top-[-8px] font-bold text-[10px] text-white bg-orange h-4 w-4  rounded-full text-center">{cartItems}</p>}
                         <button onClick={toggleCart}>
-                            <img className="h-6 w-6 md:w-5 md:h-5" src={cartIcon} alt="Cart" />
+                            <AiOutlineShoppingCart className="text-center text-[25px] text-gray-500 hover:text-gray-950"  />
                         </button>
 
                     </div>
